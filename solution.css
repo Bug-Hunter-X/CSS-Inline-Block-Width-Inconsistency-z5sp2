@@ -1,0 +1,16 @@
+To correct this behavior, explicitly set the width of the parent container. For example:
+
+```css
+.container {
+  width: 100%; /* or any specific width */
+}
+
+div {
+  width: 50%;
+  height: 50%;
+  background-color: blue;
+  display: inline-block;
+}
+```
+
+By setting the parent container's width, the inline-block div will correctly render at 50% of that width in most browsers.
