@@ -1,0 +1,12 @@
+The following CSS code snippet exhibits unexpected behavior in certain browsers:
+
+```css
+div {
+  width: 50%;
+  height: 50%;
+  background-color: blue;
+  display: inline-block;
+}
+```
+
+The issue arises when the parent container does not have its width explicitly set.  In some cases, the div might not render to 50% of the parent's width, but instead takes up the entire available width.
